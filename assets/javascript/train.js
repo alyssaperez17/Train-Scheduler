@@ -12,7 +12,7 @@ var config = {
   storageBucket: "",
 };
 
-firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(Config);
 
 var database = firebase.database();
 
@@ -21,7 +21,7 @@ var database = firebase.database();
 
 
 
-$("add-train-btn").on("click", function (event) {
+$("#add-train-btn").on("click", function (event) {
   event.preventDefault();
 
   var tName = $("#train-name-input").val().trim();
